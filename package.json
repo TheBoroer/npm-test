@@ -4,10 +4,19 @@
   "description": "An example npm package",
   "main": "index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theboroer/npm-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theboroer/npm-test/issues"
+  },
+  "homepage": "https://github.com/theboroer/npm-test#readme",
   "scripts": {
-    "release:patch": "standard-version --release-as patch",
-    "release:minor": "standard-version --release-as minor",
+    "release": "echo 'please run release:major, release:minor, or release:patch'",
     "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
     "publish:do": "git push --follow-tags origin main && npm publish --access public"
   },
   "keywords": [],
