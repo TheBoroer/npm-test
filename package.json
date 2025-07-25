@@ -1,0 +1,18 @@
+{
+  "name": "@theboroer/test",
+  "version": "0.0.1",
+  "description": "An example npm package",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
